@@ -2,12 +2,19 @@
 pandas
 
 numpy
+
 matplotlib
+
 seaborn
+
 sklearn
+
 tensoflow
+
 keras
+
 joblib
+
 os
 
 Όλες αυτές οι βιβλιοθήκες μπορούν να εγκατασταθούν με χρήση του pip install, (ή conda install σε περίπτωση που δουλεύεται σε conda enviroment).
