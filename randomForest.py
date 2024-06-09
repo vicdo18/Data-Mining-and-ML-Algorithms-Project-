@@ -4,6 +4,7 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
 import os
+import joblib
 
 # Directory
 directory = '/Users/anastasiskiout/Documents/Πανεπηστήμιο/Εξόρυξη Δεδομένων/Υλοποιητικό Project/harth'
@@ -45,6 +46,10 @@ rf_classifier = RandomForestClassifier(n_estimators=100, max_depth=10, random_st
 # Fit the model to the training data
 print("Fitting the model to the training data...")
 rf_classifier.fit(X_train, y_train)
+
+# Save the model to a file
+model_filename = 'random_forest_model.joblib'
+joblib.dump(rf_classifier, model_filename)
 
 # Evaluate the model
 print("Evaluating the model...")
